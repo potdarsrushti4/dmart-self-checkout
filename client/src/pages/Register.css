@@ -1,0 +1,107 @@
+body {
+  background-color: #e9f5e1; /* Light green background */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.register-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 128, 0, 0.2);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.register-container p {
+  text-align: center;
+  color: #2e7d32;
+  font-weight: 500;
+}
+.register-container a {
+  color: #2e7d32;
+  text-decoration: underline;
+}
+
+.register-container h2 {
+  text-align: center;
+  color: #2e7d32; /* DMart dark green */
+  margin-bottom: 1rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form input {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #c8e6c9;
+  border-radius: 5px;
+}
+
+.register-form button {
+  padding: 0.75rem;
+  background-color: #2e7d32;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+  background-color: #1b5e20;
+}
+.password-wrapper {
+  position: relative;
+}
+.register-form input {
+  margin-bottom: 4px;
+}
+
+.register-form small {
+  color: red;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 2.5rem; /* leave space for icon */
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #c8e6c9;
+  border-radius: 5px;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #2e7d32;
+  background-color: transparent; /* inherits input bg */
+  padding: 0 0.25rem;
+}
+
+.success-message {
+  color: green;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
