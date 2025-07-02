@@ -11,7 +11,7 @@ const Register = () => {
     phone: "",
     password: ""
   });
-
+  
   const [errors, setErrors] = useState({});
   const [showPassword, setShowPassword] = useState(false);
   const [success, setSuccess] = useState(false);
