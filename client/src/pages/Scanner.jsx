@@ -75,7 +75,7 @@ const Scanner = () => {
 
   const handleDetected = async (barcode) => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/products/barcode/${barcode}`);
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/products/barcode/${barcode}`);
       setProduct(res.data);
       setError("");
     } catch (err) {
@@ -86,7 +86,7 @@ const Scanner = () => {
 
   const handleAddToCart = async () => {
     try {
-      await axios.post("http://localhost:5000/api/cart/add", {
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/cart/add`, {
         userId,
         productId: product._id,
         quantity: 1
@@ -101,7 +101,7 @@ const Scanner = () => {
 
   const fetchCart = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/cart/${userId}`);
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/cart/${userId}`);
       setCartCount(res.data?.items?.length || 0);
     } catch (err) {
       console.error("Failed to fetch cart", err);

@@ -22,7 +22,7 @@ const Cart = () => {
     useEffect(() => {
         const fetchCart = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/cart/${userId}`);
+                const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/cart/${userId}`);
                 setCart(res.data);
             } catch (err) {
                 console.error("Failed to fetch cart", err);
@@ -36,7 +36,7 @@ const Cart = () => {
 
     const handleRemove = async (productId) => {
         try {
-            await axios.delete(`http://localhost:5000/api/cart/${userId}/${productId}`);
+            await axios.delete(`${import.meta.env.VITE_API_URL}/api/cart/${userId}/${productId}`);
             setCart(prev => ({
                 ...prev,
                 items: prev.items.filter(item => item.productId._id !== productId)
@@ -48,14 +48,14 @@ const Cart = () => {
 
     const handleQuantityChange = async (productId, newQuantity) => {
         try {
-            await axios.put("http://localhost:5000/api/cart/update-quantity", {
+            await axios.put(`${import.meta.env.VITE_API_URL}/api/cart/update-quantity`, {
                 userId,
                 productId,
                 quantity: newQuantity,
             });
 
             // Re-fetch cart after update
-            const res = await axios.get(`http://localhost:5000/api/cart/${userId}`);
+            const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/cart/${userId}`);
             setCart(res.data);
         } catch (err) {
             console.error("Quantity update failed", err);

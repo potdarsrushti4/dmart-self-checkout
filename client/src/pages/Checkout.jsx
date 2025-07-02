@@ -22,7 +22,7 @@ const Checkout = () => {
   useEffect(() => {
     const fetchCart = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/cart/${userId}`);
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/cart/${userId}`);
         setCart(res.data);
       } catch (err) {
         console.error("Checkout load error:", err);
@@ -47,7 +47,7 @@ const Checkout = () => {
       setOrderPlaced(true);
 
       // clear cart
-      await axios.delete(`http://localhost:5000/api/cart/${userId}/clear`);
+      await axios.delete(`${import.meta.env.VITE_API_URL}/api/cart/${userId}/clear`);
     } catch (err) {
       console.error("Failed to place order", err);
     }
