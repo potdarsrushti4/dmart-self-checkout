@@ -56,8 +56,6 @@ A modern web application that enables DMart customers to **scan products**, **ad
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/821e7706-e2bc-4618-80de-a4e81fce2e11" width="300"/>
   <img src="https://github.com/user-attachments/assets/43507ac5-c6c3-4f78-ac3f-030a9b9201cd" width="300"/>
