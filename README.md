@@ -56,23 +56,18 @@ A modern web application that enables DMart customers to **scan products**, **ad
 
 ## 📸 Screenshots
 
-![p3](https://github.com/user-attachments/assets/821e7706-e2bc-4618-80de-a4e81fce2e11)  
-![p4](https://github.com/user-attachments/assets/43507ac5-c6c3-4f78-ac3f-030a9b9201cd)  
-![p5](https://github.com/user-attachments/assets/f97b4a9c-bb9c-4528-bed1-154b9061277d)  
-![p6](https://github.com/user-attachments/assets/e66fd391-1f5d-495a-b1a4-ab12abb013df)
-
----
-
-## 🙌 Contributing
-
-Contributions are welcome!  
-Feel free to fork this repo, submit issues, or open a pull request.
-
----
-
-## 📬 Contact
-
-📧 srushtipotdar@example.com *(replace with your email if you'd like)*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/821e7706-e2bc-4618-80de-a4e81fce2e11" width="500"/>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/43507ac5-c6c3-4f78-ac3f-030a9b9201cd" width="500"/>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f97b4a9c-bb9c-4528-bed1-154b9061277d" width="500"/>
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e66fd391-1f5d-495a-b1a4-ab12abb013df" width="500"/>
+</p>
 
 ---
 
@@ -88,5 +83,3 @@ Please contact the author for permissions or intended use.
 `MERN` `Barcode Scanner` `React.js` `MongoDB` `Netlify` `Render` `E-commerce` `DMart` `Self-Checkout`
 
 ---
-
-**Made by [Srushti Potdar](https://github.com/srushtipotdar)**
